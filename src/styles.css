@@ -1,0 +1,47 @@
+body {
+  border: 1px solid #8a8a8a;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 700px;
+}
+.updated {
+  font-size: 12px;
+}
+.img-main {
+  font-size: 106px;
+  text-align: center;
+  margin-top: -40px;
+}
+.description {
+  text-align: center;
+  margin-top: -20px;
+}
+.temp-now {
+  border: 1px solid #8a8a8a;
+  border-radius: 10px;
+  margin: 20px 30px;
+  text-align: center;
+  font-size: 60px;
+}
+.units {
+  font-size: 40px;
+}
+
+.main-info {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.additional {
+  text-align: center;
+  margin-top: 15px;
+}
+.days {
+  border: 1px solid #8a8a8a;
+  border-radius: 10px;
+  margin: 0 40px 30px 40px;
+  padding: 20px;
+  text-align: center;
+}
+.emoji {
+  font-size: 52px;
+}
