@@ -1,4 +1,4 @@
-body {
+.weather-container {
   border: 1px solid #8a8a8a;
   border-radius: 10px;
   margin: 20px auto;
@@ -44,4 +44,12 @@ body {
 }
 .emoji {
   font-size: 52px;
+}
+a {
+  text-decoration: none;
+}
+footer {
+  display: block;
+  text-align: center;
+  font-size: 14px;
 }
