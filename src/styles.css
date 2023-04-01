@@ -2,15 +2,14 @@
   border: 1px solid #8a8a8a;
   border-radius: 10px;
   margin: 20px auto;
+  padding: 20px;
   max-width: 700px;
 }
-.updated {
-  font-size: 12px;
-}
-.img-main {
-  font-size: 106px;
-  text-align: center;
-  margin-top: -40px;
+.main-icon {
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .description {
   text-align: center;
@@ -18,13 +17,13 @@
 }
 .temp-now {
   border: 1px solid #8a8a8a;
-  border-radius: 10px;
-  margin: 20px 30px;
+  border-radius: 40px;
+  margin: 20px 50px;
   text-align: center;
   font-size: 60px;
 }
 .units {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .main-info {
