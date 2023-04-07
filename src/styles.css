@@ -2,16 +2,14 @@ body {
   font-family: arial, sans-serif;
 }
 
-.city {
+h1 {
   color: black;
   font-size: 32px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 10px;
 }
-.fa-thin {
-  font-size: 30px;
-}
+
 ul {
   margin: 0;
   padding: 0;
@@ -51,6 +49,7 @@ li:first-letter {
   border: 1px solid black;
   background-color: black;
   color: white;
+  padding: 5px 60px;
 }
 
 .btn2 {
