@@ -25,7 +25,7 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-6">
+              <div class="col-5">
                 <input
                   type="search"
                   placeholder="Type a city.."
@@ -37,7 +37,7 @@
               <div class="col-4">
                 <input type="submit" value="Search" class="btn" />
               </div>
-              <div class="col-2">
+              <div class="col-3">
                 <button class="btn2" id="current-location-button">
                   <i class="fa-sharp fa-solid fa-location-dot"></i>
                 </button>
@@ -65,9 +65,15 @@
               </div>
             </div>
             <div class="col-5">
-              <ul>
-                <li class="hum">Humidity: <span id="humidity"></span>%</li>
-                <li class="win">Wind: <span id="wind"></span> km/h</li>
+              <ul class="hum-win">
+                <li>
+                  <i class="fa-solid fa-droplet"></i>
+                  Humidity: <span id="humidity"></span>%
+                </li>
+                <li class="win">
+                  <i class="fa-solid fa-wind"></i> Wind:
+                  <span id="wind"></span> km/h
+                </li>
               </ul>
             </div>
           </div>
