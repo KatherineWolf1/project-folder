@@ -111,7 +111,10 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  let realFeelWeather = Math.round(response.data.main.feels_like);
+  let feelsLikeTemp = document.querySelector("#feelsLikeTemp");
 
+  feelsLikeTemp.innerHTML = ` ${realFeelWeather}°C`;
   celsiusTemperature = response.data.main.temp;
 
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
@@ -143,5 +146,21 @@ function handleSubmit(event) {
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+function showCurrentPosition(position) {
+  let apiKey = "ac209dae1f283fb332a5bb7f50b0f468";
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function showGeoLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showCurrentPosition);
+}
+
+let currentLocation = document.querySelector("#current-location-button");
+currentLocation.addEventListener("click", showGeoLocation);
 
 search("Dusseldorf");

@@ -10,6 +10,10 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/d59a597a9e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="src/styles.css" />
@@ -21,7 +25,7 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-9">
+              <div class="col-6">
                 <input
                   type="search"
                   placeholder="Type a city.."
@@ -30,33 +34,40 @@
                   autocomplete="off"
                 />
               </div>
-              <div class="col-3">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
-                />
+              <div class="col-4">
+                <input type="submit" value="Search" class="btn" />
+              </div>
+              <div class="col-2">
+                <button class="btn2" id="current-location-button">
+                  <i class="fa-sharp fa-solid fa-location-dot"></i>
+                </button>
               </div>
             </div>
           </form>
           <div class="overview">
-            <h1 id="city"></h1>
+            <span>
+              <i class="fa-light fa-map-pin"></i>
+              <span class="city" id="city"></span
+            ></span>
             <ul>
               <li>Last updated: <span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-7">
               <div class="clearfix weather-temperature">
                 <img src="" alt="Clear" id="icon" class="float-left" />
                 <div class="float-left">
                   <strong id="temperature"></strong
                   ><span class="units">°C</span>
+                  <div class="feelsLike">
+                    Feels like <span id="feelsLikeTemp">°C</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-5">
               <ul>
                 <li class="hum">Humidity: <span id="humidity"></span>%</li>
                 <li class="win">Wind: <span id="wind"></span> km/h</li>
